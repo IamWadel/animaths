@@ -1,0 +1,236 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<title>Animaths</title>
+<!--
+App Starter Template
+http://www.templatemo.com/tm-492-app-starter
+-->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<style type="text/css">
+
+body{
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: aliceblue;
+}
+</style>
+
+</head>
+<body >
+
+
+
+
+
+
+<!-- Home Section -->
+<img src="flags/imagepresentationplaystore.png" style="width:98%">
+<br><br>
+<h1 style="text-align: center;">ANIMATHS</h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k6X2Siuwl0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<!-- <h2 style="text-align: center;" id="labelfunpass">FUN PASS</h2> -->
+<!-- 
+<div>
+<img src="flags/france.svg" class="rounded float-start img-fluid">
+<img src="flags/usuk.svg" class="rounded float-start img-fluid">
+<img src="flags/germany.svg" class="rounded float-start img-fluid">
+<img src="flags/spain.svg" class="rounded float-start img-fluid">
+<img src="flags/italy.svg" class="rounded float-start img-fluid">
+
+</div>
+
+ -->
+<br><br>
+<table style="width:100% !important">
+	<tr style="width:100% height:5%">
+		
+		<th style="width:50px !important"><img src="flags/usuk.svg" onclick="metlanglais()"></th>
+		<th style="width:50px !important"><img src="flags/germany.svg" onclick="metlallemand()"></th>
+		<th style="width:50px !important"><img src="flags/france.svg" onclick="metlefrancais()"></th>
+		<th style="width:50px !important"><img src="flags/spain.svg" onclick="metlespagnol()"></th>
+		<th style="width:50px !important"><img src="flags/italy.svg" onclick="metlitalien()"></th>
+	</tr>
+</table>
+<br><br>
+<h3 id="label6"></h3> 
+	
+<div id="monhtmltermofuse"> 
+</div>
+
+
+<h3 id="label7"></h3>
+<div id="monhtmlprivacy"></div>
+
+<br><br>
+
+<img src="flags/icon.png" style="width:98%">
+
+<!-- Back top -->
+
+
+
+<!-- SCRIPTS -->
+<script type="text/javascript">
+	var userLang = navigator.language || navigator.userLanguage;
+  //console.log(userLang);
+  //if(userLang.split('-')[0]=='fr'){console.log('je suis francais et fier !')}
+  //console.log(userLang.split('-')[0]);
+switch (userLang.split('-')[0]) {
+  case 'fr':
+
+    // document.getElementById("label6").innerHTML='Conditions d\'utilisation';
+    // document.getElementById("label7").innerHTML='Politique de confidentialité';
+
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmlprivacy='<h3>Politique de confidentialité: Animaths</h3>'+'<h3>Collecte et utilisation des données</h3>'+'<p>Animaths ne collecte aucune information personnelle</p>'+'<h3>Politique de confidentialité : Animaths</h3>'+'<p>L\'adresse e-mail depuis laquelle vous nous contactez et toute autre information vous concernant liée à l\'objet du mail ne seront utilisées que pour traiter votre demande.</p>'+'<h3>Informations personnelles</h3>'+'<p>Nous n\'utiliserons vos informations que pour répondre à vos questions et vous apporter l\'aide dont vous aurez besoin. Les adresses que vous nous communiquez ne sont en aucun cas communiquées à des sociétés tierces.</p>'+'<h3>Correction et mise à jour de vos informations personnelles</h3>'+'<p>Conformément à l\'article 34 de la Loi « Informatique et Liberté » du 6 janvier 1978, modifié par la loi du 6 août 2004, vous disposez d\'un droit d\'accès, de modification, de rectification et de suppression des données qui vous concernent. Pour exercer votre droit d\'opposition, de rectification et de correction, vous êtes invité à vous adresser à : hatemmaati@gmail.com.</p>';
+
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmltermofuse='<h3>Conditions d\'utilisation</h3>'+'<p>En achetant Animaths, vous accédez à l\'intégralité des niveaux, de l\'aide au calcul et à tous les mini-jeux à vie.</p>';
+
+
+
+    break;
+  case 'it':
+ 
+    // document.getElementById("label6").innerHTML='Condizioni d\'uso';
+    // document.getElementById("label7").innerHTML='Politica sulla privacy';
+
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmlprivacy='<h3>Politica sulla privacy: Animaths</h3>'+'<h3>Raccolta e uso dei dati</h3>'+'<p>Animaths non raccoglie nessuna informazione personale</p>'+'<h3>Privacy Policy : Animaths</h3>'+'<p>L\'indirizzo email da cui ci contatti e qualsiasi altra informazione su di te relativa all\'oggetto dell\'email sarà usata solo per elaborare la tua richiesta.</p>'+'<h3>Informazioni personali</h3>'+'<p>Utilizzeremo le tue informazioni solo per rispondere alle tue domande e fornirti l\'aiuto che ti serve. Gli indirizzi che ci comunicate non sono in nessun caso comunicati a società terze.</p>';
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmltermofuse='<h3>Termini di utilizzo</h3>'+'<p>Acquistando Animaths, si ottiene l\'accesso a tutti i livelli, l\'aiuto al calcolo e tutti i minigiochi a vita.</p>';
+
+
+  break;
+  case 'es':
+    
+  
+    // document.getElementById("label6").innerHTML='Términos de uso';
+    // document.getElementById("label7").innerHTML='Política de privacidad';
+
+    
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmlprivacy='<h3>Política de privacidad : Animaths</h3>'+'<h3>Recogida y uso de datos</h3>'+'<p> Animaths no recoge ninguna información personal</p>'+'<h3>Política de privacidad : Animaths</h3>'+'<p>La dirección de correo electrónico desde la que se pone en contacto con nosotros y cualquier otra información sobre usted relacionada con el tema del correo electrónico sólo se utilizará para procesar su solicitud.</p>'+'<h3>Información personal</h3>'+'<p>Sólo utilizaremos su información para responder a sus preguntas y proporcionarle la ayuda que necesita. Las direcciones que nos facilite no se transmitirán a ninguna empresa tercera.</p>'+'<h3>Corrección y actualización de sus datos personales</h3>'+'<p>Tiene derecho a acceder, modificar, rectificar y eliminar los datos que le conciernen. Para ejercer su derecho de oposición, rectificación y corrección, diríjase a: hatemmaati@gmail.com.</p>';
+      
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmltermofuse='<h3>Condiciones de uso </h3>'+'<p>Al comprar Animaths, obtienes acceso a todos los niveles, a la ayuda de cálculo y a todos los minijuegos de por vida.</p>';
+
+
+    break;
+  case 'de':
+
+    // document.getElementById("label6").innerHTML='Bedingungen für die Nutzung';
+    // document.getElementById("label7").innerHTML='Datenschutzrichtlinie';
+
+    
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmlprivacy='<h3>Datenschutzrichtlinie : Animaths</h3>'+'<h3>Datenerfassung und Verwendung</h3>'+'<p> Animaths sammelt keine persönlichen Daten</p>'+'<h3>Datenschutzrichtlinie : Animaths</h3>'+'<p>Die E-Mail-Adresse, von der aus Sie uns kontaktieren, und alle anderen Informationen über Sie, die sich auf den Gegenstand der E-Mail beziehen, werden nur zur Bearbeitung Ihrer Anfrage verwendet.</p>'+'<h3>Persönliche Informationen</h3>'+'<p>Wir werden Ihre Daten nur verwenden, um Ihre Fragen zu beantworten und Ihnen die gewünschte Hilfe zukommen zu lassen. Die Adressen, die Sie uns geben, werden nicht an Drittfirmen weitergegeben.</p>'+'<h3>Berichtigung und Aktualisierung Ihrer persönlichen Daten</h3>'+'<p>Sie haben das Recht auf Zugang, Änderung, Berichtigung und Löschung der Sie betreffenden Daten. Um Ihr Recht auf Widerspruch, Berichtigung und Korrektur auszuüben, wenden Sie sich bitte an: hatemmaati@gmail.com.</p>';
+      
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+      var monhtmltermofuse='<h3>Bedingungen für die Nutzung</h3>'+'<p>Mit dem Kauf Animaths erhalten Sie lebenslang Zugang zu allen Levels, Berechnungshilfen und allen Minispielen.</p>';
+
+
+    break;
+  default:
+    
+    // document.getElementById("label6").innerHTML='Terms of use';
+    // document.getElementById("label7").innerHTML='Privacy Policy';
+
+  
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmlprivacy='<h3>Privacy Policy : Animaths</h3>'+'<h3>Data collection and use</h3>'+'<p> Animaths does not collect any personal information</p>'+'<h3>Privacy Policy : Animaths</h3>'+'<p>The e-mail address from which you contact us and any other information about you related to the subject of the e-mail will only be used to process your request.</p>'+'<h3>Personal information</h3>'+'<p>We will only use your information to answer your questions and provide you with the help you need. The addresses you provide will not be passed on to any third party companies.</p>'+'<h3>Correction and update of your personal information</h3>'+'<p>You have the right to access, modify, rectify and delete data concerning you. To exercise your right of opposition, rectification and correction, you are invited to contact: hatemmaati@gmail.com.</p>';
+
+     var monhtmltermofuse='<h3>Terms of use</h3>'+'<p>By purchasing Animaths, you gain access to all levels, calculation help and all mini-games for life.</p>';
+
+    break;
+}
+//document.getElementById("monhtmltermofuse").innerHTML=monhtmltermofuse;
+    document.getElementById("monhtmlprivacy").innerHTML=monhtmlprivacy;
+
+</script>
+
+<script type="text/javascript">
+	function metlefrancais(){
+		 var monhtmlprivacy='<h3>Politique de confidentialité: Animaths</h3>'+'<h3>Collecte et utilisation des données</h3>'+'<p>Animaths ne collecte aucune information personnelle</p>'+'<h3>Politique de confidentialité : Animaths</h3>'+'<p>L\'adresse e-mail depuis laquelle vous nous contactez et toute autre information vous concernant liée à l\'objet du mail ne seront utilisées que pour traiter votre demande.</p>'+'<h3>Informations personnelles</h3>'+'<p>Nous n\'utiliserons vos informations que pour répondre à vos questions et vous apporter l\'aide dont vous aurez besoin. Les adresses que vous nous communiquez ne sont en aucun cas communiquées à des sociétés tierces.</p>'+'<h3>Correction et mise à jour de vos informations personnelles</h3>'+'<p>Conformément à l\'article 34 de la Loi « Informatique et Liberté » du 6 janvier 1978, modifié par la loi du 6 août 2004, vous disposez d\'un droit d\'accès, de modification, de rectification et de suppression des données qui vous concernent. Pour exercer votre droit d\'opposition, de rectification et de correction, vous êtes invité à vous adresser à : hatemmaati@gmail.com.</p>';
+
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     var monhtmltermofuse='<h3>Conditions d\'utilisation</h3>'+'<p>En vous abonnant, vous accédez à l\'intégralité des niveaux, de l\'aide au calcul et à tous les mini-jeux.</p>'+'<p>L\'abonnement coûte <b>5,49 € par mois</b>.</p><p>L\'abonnement est mensuel et renouvelable automatiquement chaque mois.</p>'+'<p>Votre abonnement sera automatiquement renouvelé jusqu\'à la résiliation du renouvellement automatique au moins 24 heures avant la fin de la période de paiement en cours</p>'+'<p>Vous pouvez à tout instant désactiver un renouvellement automatique via les paramètres de votre compte. Cependant, vous ne pouvez pas annuler un abonnement en cours.</p>';
+
+     //document.getElementById("monhtmltermofuse").innerHTML=monhtmltermofuse;
+    document.getElementById("monhtmlprivacy").innerHTML=monhtmlprivacy;
+    //document.getElementById("labelfunpass").innerHTML='Abonnement mensuel - FUN PASS';
+	}
+
+	function metlanglais(){
+		 var monhtmlprivacy='<h3>Privacy Policy : Animaths</h3>'+'<h3>Data collection and use</h3>'+'<p> Animaths does not collect any personal information</p>'+'<h3>Privacy Policy : Animaths</h3>'+'<p>The e-mail address from which you contact us and any other information about you related to the subject of the e-mail will only be used to process your request.</p>'+'<h3>Personal information</h3>'+'<p>We will only use your information to answer your questions and provide you with the help you need. The addresses you provide will not be passed on to any third party companies.</p>'+'<h3>Correction and update of your personal information</h3>'+'<p>You have the right to access, modify, rectify and delete data concerning you. To exercise your right of opposition, rectification and correction, you are invited to contact: hatemmaati@gmail.com.</p>';
+
+     //var monhtmltermofuse='<h3>Terms of use</h3>'+'<p>By subscribing, you have access to all the levels, the calculation help and all the mini-games</p>'+'<p>The subscription costs <b>5,49 € per month</b>.</p><p>The subscription is monthly and automatically renewable each month.</p>'+'<p>Your subscription will be automatically renewed until you cancel the automatic renewal at least 24 hours before the end of the current payment period.</p>'+'<p>You can disable automatic renewal of your subscription through your account settings. However, you cannot cancel a current subscription.</p>';
+     // document.getElementById("monhtmltermofuse").innerHTML=monhtmltermofuse;
+    document.getElementById("monhtmlprivacy").innerHTML=monhtmlprivacy;
+    //document.getElementById("labelfunpass").innerHTML='Subscription - FUN PASS';
+	}
+	function metlitalien(){
+
+		var monhtmlprivacy='<h3>Politica sulla privacy: Animaths</h3>'+'<h3>Raccolta e uso dei dati</h3>'+'<p>Animaths non raccoglie nessuna informazione personale</p>'+'<h3>Privacy Policy : Animaths</h3>'+'<p>L\'indirizzo email da cui ci contatti e qualsiasi altra informazione su di te relativa all\'oggetto dell\'email sarà usata solo per elaborare la tua richiesta.</p>'+'<h3>Informazioni personali</h3>'+'<p>Utilizzeremo le tue informazioni solo per rispondere alle tue domande e fornirti l\'aiuto che ti serve. Gli indirizzi che ci comunicate non sono in nessun caso comunicati a società terze.</p>';
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+     //var monhtmltermofuse='<h3>Termini di utilizzo</h3>'+'<p>Con la sottoscrizione, si ottiene l\'accesso a tutti i livelli, l\'aiuto al calcolo e tutti i minigiochi.</p>'+'<p>L\'abbonamento costa <b>5,49 euro al mese</b>.</p><p>L\'abbonamento è mensile e si rinnova automaticamente ogni mese. </p>'+'<p>Il tuo abbonamento si rinnoverà automaticamente fino a quando non annullerai il rinnovo automatico almeno 24 ore prima della fine del periodo di pagamento corrente</p>'+'<p>Puoi disattivare il rinnovo automatico in qualsiasi momento attraverso le impostazioni del tuo account. Tuttavia, non puoi cancellare un abbonamento in corso.</p>';
+
+	//	 document.getElementById("monhtmltermofuse").innerHTML=monhtmltermofuse;
+    document.getElementById("monhtmlprivacy").innerHTML=monhtmlprivacy;
+    //document.getElementById("labelfunpass").innerHTML='Abbonamento - FUN PASS';
+	}
+
+	function metlallemand(){
+		   var monhtmlprivacy='<h3>Datenschutzrichtlinie : Animaths</h3>'+'<h3>Datenerfassung und Verwendung</h3>'+'<p> Animaths sammelt keine persönlichen Daten</p>'+'<h3>Datenschutzrichtlinie : Animaths</h3>'+'<p>Die E-Mail-Adresse, von der aus Sie uns kontaktieren, und alle anderen Informationen über Sie, die sich auf den Gegenstand der E-Mail beziehen, werden nur zur Bearbeitung Ihrer Anfrage verwendet.</p>'+'<h3>Persönliche Informationen</h3>'+'<p>Wir werden Ihre Daten nur verwenden, um Ihre Fragen zu beantworten und Ihnen die gewünschte Hilfe zukommen zu lassen. Die Adressen, die Sie uns geben, werden nicht an Drittfirmen weitergegeben.</p>'+'<h3>Berichtigung und Aktualisierung Ihrer persönlichen Daten</h3>'+'<p>Sie haben das Recht auf Zugang, Änderung, Berichtigung und Löschung der Sie betreffenden Daten. Um Ihr Recht auf Widerspruch, Berichtigung und Korrektur auszuüben, wenden Sie sich bitte an: hatemmaati@gmail.com.</p>';
+      
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+    // var monhtmltermofuse='<h3>Bedingungen für die Nutzung des Abonnements</h3>'+'<p>Wenn Sie ein Abonnement abschließen, haben Sie während des Abonnementzeitraums Zugang zu allen Levels, zur Berechnungshilfe und zu allen Minispielen.</p>'+'<p>Das Abonnement kostet <b>5,49 € pro Monat</b>.</p><p>Die Dauer jedes Abonnements beträgt einen Monat und wird automatisch jeden Monat verlängert.</p>'+'<p>Ihr Abonnement wird automatisch verlängert, bis die automatische Verlängerung mindestens 24 Stunden vor Ende des aktuellen Zahlungszeitraums abgebrochen wird.</p>'+'<p>Sie können die automatische Erneuerung Ihres Abonnements über Ihre Kontoeinstellungen deaktivieren. Ein laufendes Abonnement können Sie jedoch nicht kündigen.</p>';
+
+	//	 document.getElementById("monhtmltermofuse").innerHTML=monhtmltermofuse;
+    document.getElementById("monhtmlprivacy").innerHTML=monhtmlprivacy;
+    //document.getElementById("labelfunpass").innerHTML='Abonnement - FUN PASS';
+
+	}
+
+	function metlespagnol(){
+		    var monhtmlprivacy='<h3>Política de privacidad : Animaths</h3>'+'<h3>Recogida y uso de datos</h3>'+'<p> Animaths no recoge ninguna información personal</p>'+'<h3>Política de privacidad : Animaths</h3>'+'<p>La dirección de correo electrónico desde la que se pone en contacto con nosotros y cualquier otra información sobre usted relacionada con el tema del correo electrónico sólo se utilizará para procesar su solicitud.</p>'+'<h3>Información personal</h3>'+'<p>Sólo utilizaremos su información para responder a sus preguntas y proporcionarle la ayuda que necesita. Las direcciones que nos facilite no se transmitirán a ninguna empresa tercera.</p>'+'<h3>Corrección y actualización de sus datos personales</h3>'+'<p>Tiene derecho a acceder, modificar, rectificar y eliminar los datos que le conciernen. Para ejercer su derecho de oposición, rectificación y corrección, diríjase a: hatemmaati@gmail.com.</p>';
+      
+     // window.location.href='http://hatem.maati.free.fr/confidentialiteFM.html'
+    // var monhtmltermofuse='<h3>Condiciones de uso de la suscripción</h3>'+'<p>Al suscribirte tendrás acceso al Fun Pass, que incluye el acceso a todos los niveles, la ayuda de cálculo y todos los minijuegos durante el periodo de suscripción.</p>'+'<p>La suscripción cuesta <b>5,49 euros al mes</b>.</p><p>La duración de cada suscripción es de un mes, renovable automáticamente cada mes.</p>'+'<p>Su suscripción se renovará automáticamente hasta que cancele la renovación automática al menos 24 horas antes del final del período de pago actual.</p>'+'<p>Puede desactivar la renovación automática de su suscripción a través de la configuración de su cuenta. Sin embargo, no puede cancelar una suscripción actual.</p>';
+		
+	//	 document.getElementById("monhtmltermofuse").innerHTML=monhtmltermofuse;
+    document.getElementById("monhtmlprivacy").innerHTML=monhtmlprivacy;
+   // document.getElementById("labelfunpass").innerHTML='Suscripción - FUN PASS';
+	}
+</script>
+<!-- <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script> -->
+
+
+</body>
+</html>
